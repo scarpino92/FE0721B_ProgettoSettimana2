@@ -1,0 +1,621 @@
+/* IMPOSTAZIONI GENERALI */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: #000;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+}
+
+/* TIPOGRAFIA */
+h1 {
+    font-size: 4rem;
+    color: #fff;
+}
+
+h2 {
+    font-size: 3.5rem;
+    line-height: 3.8rem;
+}
+
+#developer h2{
+    display: inline-block;
+    margin-bottom: 4rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#titoloChisiamo {
+    color: #000;
+    margin-top: 5px;
+}
+
+#contatti h1 {
+    color: #000;
+    font-size: 3rem;
+}
+
+#contatti h2 {
+    font-size: 2.4rem;
+}
+
+/* HEADER */
+header {
+    background-color: white;
+    border-bottom: 1px solid #d3d3d3;
+    box-shadow: 5px 0 8px 2px #d3d3d3;
+    height: 13vh;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#logo {
+    height: 3rem;
+    width: 10rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+}
+
+nav li {
+    display: block;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    list-style-type: none;
+    color: #000;
+    font-size: 1.6rem;
+}
+
+@media screen and (max-width: 767px) {
+    header nav ul {
+        position: absolute;
+        top: 100%;
+        right: -40%;
+        transition: right 0.5s ease-out;
+        background-color: rgb(238, 238, 238);
+        width: 35vw;
+        height: auto;
+        box-shadow: 2px 2px 6px #666;
+        z-index: 1;
+    }
+    .btnMenu {
+        display: none;
+    }
+    .btnMenu:checked ~ nav ul {
+        right: 0;
+    }
+
+    .icoMenu {
+        position: absolute;
+        top: 5vh;
+        right: 15vw;
+        z-index: 2;
+    }
+    nav li {
+        border-bottom: 1px solid #666;
+        padding: 20px;
+        font-size: 1.9rem;
+        text-align: center;
+    }
+    
+    #btnreg {
+        background-image: none;
+        background-color: rgb(238, 238, 238);
+        color: #000;
+        padding: 0;
+    }
+}
+
+/* MAIN */
+#banner {
+    background-image: url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60%;
+    width: 100%;
+    color: #fff;
+    text-shadow: 1px 2px 4px #000;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#banner div {
+    margin: 0 10%;
+    padding: 5% 0;
+    width: 100%;
+    height: auto;
+}
+
+#banner p {
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-image: linear-gradient(90deg, #6cc1e2,#392f7a);
+    font-size: 1.9rem;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+#developer {
+    margin: 20px;
+    text-align: center;
+}
+
+#colonne {
+    margin: 20px;
+}
+
+#colonne div {
+    text-align: center;
+    margin: 10px;
+}
+
+#colonne h3 {
+    font-size: 2rem;
+}
+
+#colonne p {
+    font-size: 1.5rem;
+}
+
+.lni {
+    color: #e42424;
+    font-size: 2em;
+}
+
+#scrivici {
+    background-color: #0c0633;
+    color: #fff;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+
+#scrivici div {
+    margin: 30px 25px;
+}
+
+#scrivici p {
+    margin: 10px 5px;
+}
+
+#notebook {
+    display: block;
+    margin: 10px auto;
+    width: 90%;
+    height: auto;
+}
+
+#chiSarai {
+    text-align: center;
+    margin: 10px auto;
+}
+
+#chiSarai h2 {
+    font-size: 2.4rem;
+    display: inline;
+}
+
+#chiSarai span{
+    display: inline-block;
+    margin: 5px auto;
+}
+
+#articoloChisiamo {
+    text-align: center;
+}
+
+#articoloChisiamo p{
+    padding: 20px;
+}
+
+.centro {
+    text-align: center;
+    width: 100%;
+}
+
+th, td {
+    padding: 10px;
+}
+
+table caption {
+    font-size: 1.9rem;
+}
+
+#tabprezzi tr:nth-child(1), #tabprezzi tr:nth-child(2), #tabprezzi tr:nth-child(3),#tabprezzi tr:nth-child(7), #tabprezzi tr:nth-child(8), #tabprezzi tr:nth-child(9) {
+    background-color: #d2dce7;
+}
+
+#tabprezzi {
+    margin:0 auto;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tabprezzi2 {
+    display: none;
+}
+
+#formcontatti {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    margin: 20px;
+}
+
+#formcontatti input:nth-child(1),#formcontatti input:nth-child(2), #formcontatti input:nth-child(3), #formcontatti textarea {
+    margin: 10px;
+    font-style: italic;
+    padding: 5px;
+}
+
+#btnform {
+    width: fit-content;
+    height: auto;
+    background-image: linear-gradient(90deg, #6cc1e2,#392f7a);
+    font-size: 1.7rem;
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    margin: 0 auto;
+}
+#contatti {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+#contattiad {
+    margin: 25px;
+}
+
+#contattiad p {
+    font-size: 1.3rem;
+}
+
+#contattiad a {
+    text-decoration: none;
+    color: #000;
+}
+
+#contattiad address p:nth-child(2), #contattiad address p:nth-child(4) {
+    margin-bottom: 10px;
+}
+/* FOOTER */
+footer {
+    box-sizing: border-box;
+    background-color: rgb(238, 238, 238);
+    width: 100%;
+    height: auto;
+    padding: 4.1%;
+    margin-bottom: 0;
+}
+
+#chiSiamoA {
+    text-decoration: none;
+    color: #000;
+    font-size: 2rem;
+}
+
+footer p:nth-of-type(2){
+    font-size: 2rem;
+    line-height: 1.9rem;
+    margin: 10px auto;
+}
+
+footer ul li{
+    display: inline-block;
+    margin: 20px 0;
+}
+
+footer ul a {
+    list-style-type: none;
+}
+
+footer label {
+    font-size: 1.7rem;
+}
+#newsdiv {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch; 
+}
+
+#newsletter {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+#vabenebtn {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+footer address{
+    font-size: 1.5rem;
+    padding: 20px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer address a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* RESPONSIVE */
+@-webkit-keyframes hvr-pulse {
+    25% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    75% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  }
+  @keyframes hvr-pulse {
+    25% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    75% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+    }
+  }
+  .hvr-pulse {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+    -webkit-animation-name: hvr-pulse;
+    animation-name: hvr-pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes shadowaway {
+      10% {
+        box-shadow: 0 0 2px 2px #000;
+      }
+
+      30% {
+        box-shadow: 0 0 3px 5px #000;
+      }
+
+      50% {
+        box-shadow: 0 0 4px 7px #000;
+      }
+
+      70% {
+        box-shadow: 0 0 5px 10px #000;
+      }
+
+      90% {
+        box-shadow: 0 0 7px 15px #000;
+      }
+
+      100% {
+        box-shadow: 0;
+      }
+  }
+  
+   #infobtn:hover {
+    animation-name: hvr-pulse,shadowaway;
+    animation-duration: 1s, 1s;
+    animation-iteration-count: infinite, infinite;
+}
+
+header a:hover {
+    color: #e42424;
+}
+
+a:hover{
+    font-weight: bold;
+}
+
+
+@media screen and (min-width: 767px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+     
+    header {
+        width:100%;
+        height: auto;
+        display: flex;
+        flex-direction: row; 
+    }
+
+    #banner {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-left: 7%;
+    }
+
+    .btnMenu, .icoMenu {
+        display: none;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    main {
+        width:100%;
+        height: auto; 
+        display: block;
+    }
+
+    #colonne {
+        display: flex;
+        justify-content: center;
+        margin: 15px;
+    }
+
+    #colonne div:nth-child(1), #colonne div:nth-child(2),#colonne div:nth-child(3) {
+        flex-basis: 30%;
+    }
+
+    #scrivici {
+        display: flex;
+        align-items: center;
+    }
+
+    #chiSarai {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #chiSarai div{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin-right: 7%;
+    }
+    #chiSarai img {
+        max-width: 50vw;
+        height: auto;
+    }
+
+    #chisiamoFoto {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        padding: 10px;
+        
+    }
+
+    #chisiamoFoto2 {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        padding: 10px;
+    }    
+
+    #flexcontainer {
+        display: flex;
+        align-content: center;
+        justify-content: space-around;
+    }
+    footer {
+        width:100%; 
+        height: auto;
+    }
+
+    #foot1{
+        display: flex;
+        flex-flow: nowrap;
+        align-items: stretch;
+        justify-content: space-around;
+    }
+
+    #divf1, #divf2, #iscriviti {
+        flex-basis: 30%;
+    }
+
+    #foot2 {
+        margin:0 auto;
+    }
+
+    #tabprezzi {
+        display: none;
+    }
+
+    #tabprezzi2 {
+        margin: 30px auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #tabprezzi2 tr:nth-child(2), #tabprezzi2 tr:nth-child(4) {
+        background-color: #d2dce7;
+    }
+
+    #tabprezzi2 tr:first-child {
+        background-color: steelblue;
+        color: #fff;
+    }
+
+    #tabprezzi2 th, #tabprezzi2 td {
+        padding: 10px;
+    }
+
+    #contatti {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+@media screen and (min-width: 1200px) {
+    .wrapper {
+        width:100%;  
+        margin: 0 auto;
+        display: flex; 
+    }
+
+    
+    #chiSarai {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #chiSarai div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 10%;
+    }
+    #chiSarai img {
+        max-width: 50vw;
+        height: auto;
+    }
+}
+}
